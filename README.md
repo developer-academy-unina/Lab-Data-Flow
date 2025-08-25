@@ -9,11 +9,8 @@
 </div>
   <br />
 <p align="center">
-  <a href="#" alt="Version">
-    <img src="https://img.shields.io/static/v1?label=Version&message=1.0.0&color=brightgreen" />
-  </a>
-  <a href="#" alt="XCode Version">
-    <img src="https://img.shields.io/static/v1?label=XCode%20Version&message=16.0&color=brightgreen&logo=xcode" />
+  <a href="#" alt="Xcode Version">
+    <img src="https://img.shields.io/static/v1?label=XCode%20Version&message=26.0&color=brightgreen&logo=xcode" />
   </a>        
   <a href="#" alt="Swift Version">
     <img src="https://img.shields.io/static/v1?label=Swift%20Version&message=6.0&color=brightgreen&logo=swift" />
