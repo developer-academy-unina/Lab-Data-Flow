@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LearnerListView: View {
     
-    var learnerVM = LearnerViewModel()
+    @State var learnerVM = LearnerViewModel()
     @State private var showModal = false
     
     var body: some View {
@@ -33,16 +33,16 @@ struct LearnerListView: View {
                 }
                 .onDelete(perform: learnerVM.delete)
             }
-            .sheet(isPresented: $showModal, content: {
+            
+            .sheet(isPresented: $showModal) {
                 NewLearnerView(add: learnerVM.add, showModal: $showModal)
-            })
+            }
+            
             .toolbar {
                 ToolbarItem {
-                    Button {
+                    Button("New learner", systemImage: "plus") {
                         showModal.toggle()
-                    } label: {
-                        Image(systemName: "plus")
-                    }
+                    }   
                 }
             }
             .navigationTitle("Learners")

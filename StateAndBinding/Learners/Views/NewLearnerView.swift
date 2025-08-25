@@ -34,27 +34,36 @@ struct NewLearnerView: View {
                     ColorPicker("Select a color", selection: $favouriteColor)
                 }
             }
+            
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Cancel") {
                         showModal.toggle()
                     }
                 }
+                
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Add") {
-                        let newLearner = Learner(name: name, surname: surname, favouriteColor: favouriteColor, description: description)
+                        let newLearner = Learner(
+                            name: name,
+                            surname: surname,
+                            favouriteColor: favouriteColor,
+                            description: description
+                        )
+                        
                         add(newLearner)
+                        
                         showModal.toggle()
                     }
+                    .buttonStyle(.glassProminent)
                 }
             }
+            
             .navigationTitle("New Learner")
         }
     }
 }
 
 #Preview {
-    NewLearnerView(add: { learner in
-        
-    }, showModal: .constant(true))
+    NewLearnerView(add: { learner in print("Adding learner.") }, showModal: .constant(true))
 }

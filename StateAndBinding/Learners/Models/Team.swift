@@ -10,8 +10,10 @@ import Foundation
 struct Team: Identifiable {
     
     var id = UUID()
+    
     var name: String
     var imageName: String
+    
     var learners: [Learner]
     
 }

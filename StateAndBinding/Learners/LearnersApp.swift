@@ -11,8 +11,8 @@ import SwiftUI
 struct LearnersApp: App {
     
     var body: some Scene {
+        
         WindowGroup {
-            
             TabView {
                 Tab("Learners", systemImage: "person.fill") {
                     LearnerListView()
@@ -24,6 +24,7 @@ struct LearnersApp: App {
             }
             
         }
+        
     }
     
 }
