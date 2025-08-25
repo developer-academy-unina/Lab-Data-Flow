@@ -70,6 +70,5 @@ class LearnerViewModel {
         Learner(name: "Matthew", surname: "Williams", favouriteColor: .black),
         Learner(name: "Elijah", surname: "Miller", favouriteColor: .orange)
     ]
-
     
 }

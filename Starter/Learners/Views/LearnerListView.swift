@@ -16,7 +16,6 @@ struct LearnerListView: View {
         NavigationStack {
             List {
                 ForEach(learnerVM.learners) { learner in
-                    
                     NavigationLink {
                         LearnerDetailView(learner: learner)
                     } label: {
@@ -33,6 +32,7 @@ struct LearnerListView: View {
             }
             .navigationTitle("Learners")
         }
+        
     }
 }
 

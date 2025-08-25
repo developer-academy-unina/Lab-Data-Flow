@@ -20,20 +20,22 @@ struct TeamCardView: View {
                 .frame(height: 200)
                 .clipped()
             
-            LinearGradient(colors: [.clear, .black.opacity(0.9)],
-                           startPoint: .top,
-                           endPoint: .bottom)
+            LinearGradient(
+                colors: [.clear, .black.opacity(0.9)],
+                startPoint: .top,
+                endPoint: .bottom
+            )
             
             VStack(alignment: .leading) {
-
+                
                 Text(team.name)
                     .font(.title)
                     .bold()
-                    
+                
                 
                 ForEach(team.learners) { learner in
                     Text("\(learner.name) \(learner.surname)")
-                        
+                    
                 }
                 
             }
@@ -48,11 +50,12 @@ struct TeamCardView: View {
 }
 
 #Preview {
-    let team = Team(name: "Vermouth 🍷", imageName: "red", learners: [
+    @Previewable let team = Team(name: "Vermouth 🍷", imageName: "red", learners: [
         Learner(name: "Jessica", surname: "White", favouriteColor: .orange,  description: "I'm invincible", imageName: "alessia"),
         Learner(name: "Daniel", surname: "Miller", favouriteColor: .green),
         Learner(name: "Emily", surname: "Davis", favouriteColor: .pink),
         Learner(name: "Sophia", surname: "Garcia", favouriteColor: .black)
     ])
-    return TeamCardView(team: team)
+    
+    TeamCardView(team: team)
 }
