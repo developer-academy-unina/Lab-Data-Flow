@@ -73,3 +73,7 @@ fastlane/test_output
 # Code Injection
 
 iOSInjectionProject/
+
+# Warp AI configuration
+
+WARP.md
