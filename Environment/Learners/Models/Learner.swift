@@ -12,14 +12,11 @@ struct Learner: Identifiable {
     
     var id: UUID = UUID()
     
-    
     var name: String
     var surname: String
     var favouriteColor: Color = .black
     
-    
     var description: String = "No Description"
     var imageName: String = "noimage"
-    
     
 }

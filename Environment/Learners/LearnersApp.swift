@@ -18,7 +18,6 @@ struct LearnersApp: App {
                 Tab("Learners", systemImage: "person.fill") {
                     LearnerListView()
                 }
-                
                 Tab("Teams", systemImage: "person.3.fill") {
                     TeamListView()
                 }

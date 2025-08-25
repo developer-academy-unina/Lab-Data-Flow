@@ -34,14 +34,13 @@ struct LearnerDetailView: View {
 }
 
 #Preview {
-    LearnerDetailView(
-        learner:
-            Learner(
-                name: "Alex",
-                surname: "Doe",
-                favouriteColor: .pink,
-                description: "I love myself",
-                imageName: "adriano"
-            )
+    @Previewable let previewLearner = Learner(
+        name: "Alex",
+        surname: "Doe",
+        favouriteColor: .pink,
+        description: "I love myself",
+        imageName: "adriano"
     )
+    
+    LearnerDetailView(learner: previewLearner)
 }

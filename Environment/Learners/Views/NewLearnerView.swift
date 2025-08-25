@@ -40,12 +40,14 @@ struct NewLearnerView: View {
                         showModal.toggle()
                     }
                 }
+                
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Add") {
                         let newLearner = Learner(name: name, surname: surname, favouriteColor: favouriteColor, description: description)
                         learnerVM.add(newLearner)
                         showModal.toggle()
                     }
+                    .buttonStyle(.borderedProminent)
                 }
             }
             .navigationTitle("New Learner")
@@ -54,5 +56,6 @@ struct NewLearnerView: View {
 }
 
 #Preview {
-    NewLearnerView(showModal: .constant(true)).environment(LearnerViewModel())
+    NewLearnerView(showModal: .constant(true))
+        .environment(LearnerViewModel())
 }
