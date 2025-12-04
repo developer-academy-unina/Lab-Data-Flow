@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27EC21BC2EE195820041635E /* NewLearnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EC21BB2EE195820041635E /* NewLearnerView.swift */; };
 		85E8371B2ADD6DB400D1A8BC /* LearnersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E8371A2ADD6DB400D1A8BC /* LearnersApp.swift */; };
 		85E8371D2ADD6DB400D1A8BC /* LearnerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E8371C2ADD6DB400D1A8BC /* LearnerListView.swift */; };
 		85E8371F2ADD6DB500D1A8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E8371E2ADD6DB500D1A8BC /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27EC21BB2EE195820041635E /* NewLearnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLearnerView.swift; sourceTree = "<group>"; };
 		85E837172ADD6DB300D1A8BC /* Learners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E8371A2ADD6DB400D1A8BC /* LearnersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnersApp.swift; sourceTree = "<group>"; };
 		85E8371C2ADD6DB400D1A8BC /* LearnerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerListView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				993B1EB52ADEBA6400CA5126 /* LearnerDetailView.swift */,
 				993B1EBD2AE0109200CA5126 /* TeamListView.swift */,
 				993B1EC02AE0184C00CA5126 /* TeamCardView.swift */,
+				27EC21BB2EE195820041635E /* NewLearnerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				993B1EB82AE0069500CA5126 /* Team.swift in Sources */,
 				85E837292ADD725500D1A8BC /* Learner.swift in Sources */,
 				993B1EB62ADEBA6400CA5126 /* LearnerDetailView.swift in Sources */,
+				27EC21BC2EE195820041635E /* NewLearnerView.swift in Sources */,
 				993B1EBE2AE0109200CA5126 /* TeamListView.swift in Sources */,
 				85E8371D2ADD6DB400D1A8BC /* LearnerListView.swift in Sources */,
 				85E8372B2ADD763600D1A8BC /* LearnerViewModel.swift in Sources */,
